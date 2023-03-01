@@ -28,14 +28,16 @@ public class PlayAnMP3 extends Application {
   @Override
   public void start(Stage stage) throws Exception {
     BorderPane pane = new BorderPane();
-    String path = "songfiles/Capture.mp3";
+    String path = "songfiles/DanseMacabreViolinHook.mp3";
     pane.setCenter( new Label(path));
     playASong(path);
     // Put the pane in a sized Scene and show the GUI
-    Scene scene = new Scene(pane, 255, 85); // 255 pixels wide, 85 pixels tall
+    Scene scene = new Scene(pane, 255, 100); // 255 pixels wide, 85 pixels tall
+    //panel changed to 255 x 100
     stage.setScene(scene);
     // Don't forget to show the running app:
     stage.show();
+    //here is a random lil comment
   }
 
   
